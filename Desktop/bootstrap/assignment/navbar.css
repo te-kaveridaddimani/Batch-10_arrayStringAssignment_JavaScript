@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans'sans-serif;
+}
+header{
+    width:100% ;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 251, 251, 0.1),white),url(shoppingimage/s1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background:rgb(153, 15, 180);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color:aqua;
+
+}
+nav .menu a button{
+    background:#fff ;
+    color: #000;
+}
+nav .logo{
+     width: 25%;
+     text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+nav .menu a:first-child{
+    color:white;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+section h5{
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-align: ;
+    color:black;
+    
+}
+section h6{
+    font-size: 20px;
+    font-weight: 100;
+   font-family:Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+
+
+section a{
+    padding: 12px 30px;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+section .buttonone{
+    background:#fff ;
+    color: #000;
+}
+
+section .buttontwo{
+    background: #1200b8;
+    color: #fff;
+}
+section .buttonthree{
+    background:black;
+    color: #fff;
+}
+.content_change::after{
+    content:'';
+    animation:changetext 10s infinite linear;
+    color:red;
+
+}
+@keyframes changetext{
+    0%{content: ' Bangalore';}
+    10%{content: ' Delhi';} 
+    20%{content: ' Mumbai';}
+    30%{content: ' Pune';}
+    40%{content: ' Hydrabad';}
+}
